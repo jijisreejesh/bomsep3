@@ -1,0 +1,28 @@
+<!-- changes the background color of paragraph with specified id when button clicked  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: aquamarine;
+        }
+        button:active{
+            background-color: aqua;
+        }
+    </style>
+ </head>
+ <body>
+    <p id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam incidunt nobis ullam non atque illo voluptatibus unde architecto, delectus libero adipisci natus iusto, provident beatae labore voluptatum. In, dolore inventore!</p>
+    <button onclick="fun()">Click</button>
+    <script>
+        function fun(){
+        document.getElementById('one').style.backgroundColor="red"
+        }
+        </script>
+</body>
+ </html>

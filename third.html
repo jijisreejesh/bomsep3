@@ -1,0 +1,31 @@
+<!-- Write a program to redirect the user to  a different website after  delay of 5 seconds -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: aquamarine;
+        }
+        button:active{
+            background-color: aqua;
+        }
+    </style>
+ </head>
+ <body>
+    <button onclick="fun()">Click</button>
+    <script>
+       
+        function fun() {
+            setTimeout(() => {
+                window.location.assign("https://www.facebook.com") 
+            }, 5000);
+          
+        }
+    </script>
+ </body>
+ </html>

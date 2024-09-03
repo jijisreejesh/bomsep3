@@ -1,0 +1,28 @@
+<!-- Write a javascript function that open a new browser window with a specified URL and diamensions(eg :400*400 pixels) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+            height: 40px;
+            background-color: aquamarine;
+        }
+        button:active{
+            background-color: aqua;
+        }
+    </style>
+ </head>
+ <body>
+    <button onclick="fun()">Click</button>
+    <script>
+     function fun(){
+       let a=window.open("https://www.youtube.com",Width=300,height=500)
+       a.resizeTo(600,400)
+     }
+    </script>
+ </body>
+ </html>
